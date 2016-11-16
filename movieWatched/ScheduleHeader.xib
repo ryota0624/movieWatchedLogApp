@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleHeader" customModule="movieWatched" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduleHeader" customModule="movieWatched" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJW-i5-zLs">
+                    <rect key="frame" x="137" y="0.0" width="65" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="rcn-uE-VpB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exF-Cj-RxI">
+                    <rect key="frame" x="8" y="11" width="31" height="30"/>
+                    <state key="normal" title="prev"/>
+                    <connections>
+                        <action selector="touchPrev:" destination="iN0-l3-epB" eventType="touchUpInside" id="ahz-dy-XFk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiO-Jr-0yZ">
+                    <rect key="frame" x="302" y="11" width="30" height="30"/>
+                    <state key="normal" title="next"/>
+                    <connections>
+                        <action selector="touchNext:" destination="iN0-l3-epB" eventType="touchUpInside" id="m9w-tC-eNE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtM-gw-Zw9">
+                    <rect key="frame" x="148" y="21" width="42" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Today"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.91592454663212441" green="0.91592454663212441" blue="0.91592454663212441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XJW-i5-zLs" secondAttribute="bottom" constant="20" id="3k8-aC-JEk"/>
+                <constraint firstItem="JiO-Jr-0yZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FRd-2u-dQ8"/>
+                <constraint firstItem="XJW-i5-zLs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sge-2U-5bO"/>
+                <constraint firstItem="exF-Cj-RxI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="gqP-gM-vlE"/>
+                <constraint firstItem="JiO-Jr-0yZ" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="h1I-Kd-zZO"/>
+                <constraint firstItem="XJW-i5-zLs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qRG-RX-DRv"/>
+                <constraint firstItem="exF-Cj-RxI" firstAttribute="baseline" secondItem="JiO-Jr-0yZ" secondAttribute="baseline" id="xm4-ki-ach"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="XJW-i5-zLs" id="9kP-iq-KEh"/>
+            </connections>
+            <point key="canvasLocation" x="18" y="-166.5"/>
+        </view>
+    </objects>
+</document>

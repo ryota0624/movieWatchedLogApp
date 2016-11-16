@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.0.1)
+  - ReSwift (2.1.0)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ReSwift
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 1dc2ce0f913b27380cd5b803af8aa853745b9608
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  ReSwift: c13b76cb963c5ab2a137c9c6e74823cef4b81588
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: c30591eb67e5c88add78e3e0826bf96aa657f237
+
+COCOAPODS: 1.0.1
